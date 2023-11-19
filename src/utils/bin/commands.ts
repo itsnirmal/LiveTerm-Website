@@ -23,7 +23,7 @@ Type 'sumfetch' to display summary.
 };
 
 // Redirection
-export const gui = async (args: string[]): Promise<string> => {
+export const simple = async (args: string[]): Promise<string> => {
   window.open(`${config.repo}`);
   return 'Opening alt website...';
 };
@@ -147,6 +147,6 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
-Type 'simsim' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for a simpler version.
+Type 'simple' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for a simpler version.
 `;
 };
